@@ -11,7 +11,6 @@ struct ContentView: View {
     
     @ObservedObject var networkManager = NetworkManager()
     
-
     var body: some View {
         NavigationView {
 
@@ -24,7 +23,7 @@ struct ContentView: View {
                 }
             }
             .listStyle(.grouped)
-            .navigationTitle("News")
+            .navigationTitle("Hacker News")
         }
         .onAppear() {
             self.networkManager.fetcData()
